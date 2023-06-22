@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Burda</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__menu menu">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<ul class="menu__list menu__list-start">
+						<li class="menu__item-button" id="button-open"><img src="img/icons/menu.svg" class="" alt="menu">
+							<span>Меню</span>
+						</li>
+						<li class="menu__item nav-item dropdown"><a href="" class="menu__link nav-link dropdown-toggle"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<select name="menu__item-number">
+									<option value="1">+38 (099) 372-16-81</option>
+									<option value="2">+38 (099) 372-16-81</option>
+									<option value="3">+38 (066) 091-41-42</option>
+								</select>
+								<!-- <img src="img/icons/arrow-down.svg" class="" alt=""> --></a>
+
+						</li>
+						<li class="menu__item"><a href="" class="menu__link">Сукні
+
+							</a></li>
+						<li class="menu__item"><a href="" class="menu__link">Блузки</a></li>
+						<li class="menu__item"><a href="" class="menu__link">Спідниці</a></li>
+						<li class="menu__item nav-item dropdown">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+								id="button-categories">
+								Більше категорій <span id="arrow-downs" class="arrow-down"></span>
+							</button>
+						</li>
+					</ul>
+
+					<div class="header__logo"> <img src="img/icons/logo.svg" class="" alt=""></div>
+					<ul class="menu__list menu__list-end">
+						<li class="menu__item menu__item-search"><a href="" class="menu__link"> <img
+									src="img/icons/search.svg" class="" alt="search">
+								<p>Пошук...</p>
+							</a></li>
+						<li class="menu__item"><a href="" class="menu__link"><img src="img/icons/like.svg" class=""
+									alt="like">
+								<p>Улюблене <span>0</span></p>
+							</a></li>
+						<li class="menu__item"><a href="" class="menu__link"> <img src="img/icons/basket.svg" class=""
+									alt="basket">
+								<p>Кошик <span>0</span> </p>
+							</a></li>
+						<li class="menu__item"><a href="" class="menu__link"> <img src="img/icons/acaunt.svg" class=""
+									alt="acaunt">
+								<p>Акаунт</p>
+							</a></li>
+						<li class="menu__item"><a href="" class="menu__link">
+								<p>Ua / ru</p>
+							</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="menu__hidden menu-hidden" id="menuHidden">
+				<div class="menu-hidden__button " id="button-close"> <span class="button-close"></span> Меню</div>
+				<div class="menu-hidden__body">
+					<ul class="menu-hidden__list">
+						<li class="menu-hidden__item"><a href="">Головна</a></li>
+						<li class="menu-hidden__item categories__item ">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+									<button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+										id="categoris-hidden-menu">
+										Категорії товарів <span id="arrow-downs1" class="arrow-down1"></span>
+									</button>
+								</h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<ul class="menu-hidden__accordion-list">
+											<li class="menu-hidden__accordion-item"><a href="">Сукні</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Блузки</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Спідниці</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Кардигани</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Спортивні костюми</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Спортивні штани</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Костюми жіночі</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Пляжні туніки</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Гіпюрові сукні</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Легінси, лосини</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Пальта та підпальта</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Вечірні та випускні сукні</a></li>
+											<li class="menu-hidden__accordion-item"><a href="">Купальники</a></li>
+											<li class="menu-hidden__accordion-item menu-hidden__accordion-item-sale "><a
+													href="">Сезонний розпродаж</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="menu-hidden__item"><a href="">Про нас</a></li>
+						<li class="menu-hidden__item"><a href="">Таблиця розмірів</a></li>
+						<li class="menu-hidden__item"><a href="">Блоґ</a></li>
+						<li class="menu-hidden__item"><a href="">Контакти</a></li>
+						<li class="menu-hidden__item"><a href="">Доставка і оплата</a></li>
+
+
+						<li class="menu-hidden__item number__item"><a href="">+38 (099) 372-16-81</a> <a href="">+38 (066)
+								091-41-42</a></li>
+						<li class="menu-hidden__item"></li>
+
+						<li class="menu-hidden__item"><a href="">Ми в соціальних мережах:</a></li>
+						<li class="menu-hidden__item social__item">
+							<a href=""><img src="img/footer/inst.svg" class="" alt="inst"></a>
+							<a href=""><img src="img/footer/facebook.svg" class="" alt="facebook"></a>
+							<a href=""><img src="img/footer/viber.svg" class="" alt="viber"></a>
+						</li>
+						<li class="menu-hidden__item language__item"><a href="">Мова: UA/ru</a></li>
+						<li class="menu-hidden__item bank__item"><a href=""><img src="img/icons/visa.svg" class="" alt=""></a>
+							<a href=""><img src="img/icons/mc-logo.svg" class="" alt=""></a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+			<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+				data-bs-parent="#accordionExample">
+				<div class="accordion-body catalog-accordion">
+					<div class="catalog-accordion__body">
+						<ul class="catalog-accordion__list">
+							<li class="catalog-accordion__item"><a href="">Сукні</a></li>
+							<li class="catalog-accordion__item"><a href="">Блузки</a></li>
+							<li class="catalog-accordion__item"><a href="">Спідниці</a></li>
+							<li class="catalog-accordion__item"><a href="">Кардигани</a></li>
+						</ul>
+						<ul class="catalog-accordion__list">
+							<li class="catalog-accordion__item"><a href="">Спортивні костюми</a></li>
+							<li class="catalog-accordion__item"><a href="">Спортивні штани</a></li>
+							<li class="catalog-accordion__item"><a href="">Костюми жіночі</a></li>
+							<li class="catalog-accordion__item"><a href="">Пляжні туніки</a></li>
+						</ul>
+						<ul class="catalog-accordion__list">
+							<li class="catalog-accordion__item"><a href="">Гіпюрові сукні</a></li>
+							<li class="catalog-accordion__item"><a href="">Легінси, лосини</a></li>
+							<li class="catalog-accordion__item"><a href="">Пальта та підпальта</a></li>
+							<li class="catalog-accordion__item"><a href="">Вечірні та випускні сукні</a></li>
+						</ul>
+						<ul class="catalog-accordion__list">
+							<li class="catalog-accordion__item"><a href="">Купальники</a></li>
+							<li class="catalog-accordion__item"><a href="">Сезонний розпродаж</a></li>
+						</ul>
+					</div>
+					<div class="catalog-accordion__decor catalog-accordion-decor">
+						<img src="img/header/decor.png" class="" alt="">
+						<div class="catalog-accordion-decor__text">
+							<div class="dresses-card__new catalog-accordion-decor-new">Новинка</div>
+							<div class="dresses-card__title title-name catalog-accordion-decor__text-name">Сукня жіноча ошатна
+								гіпюрова вечірня</div>
+							<div class="dresses-card__price"><span>1184 грн</span> 592 грн </div>
+							<div class="dresses-card__color">
+								<a href=""><i class="dresses-card__color-black"></a></i>
+								<a href=""><i class="dresses-card__color-pink"></a></i>
+								<a href=""><i class="dresses-card__color-white"></a></i>
+								<a href=""><i class="dresses-card__color-blue"></a></i>
+							</div>
+							<div class="dresses-column__more more-text-bold"> <a href=""> Замовити <img
+										src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page ">
+			<div class="swiper ">
+				<div class="page__main main  swiper-wrapper">
+
+					<div class="main__first-slide swiper-slide">
+						<div class="main__container">
+							<div class="main__text">
+								<div class="main__title">Одяг, що підкреслює твою красу</div>
+								<div class="main__subtitle">Підкресліть свою природню красу разом з магазином Burda Liubov</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__two-slide swiper-slide">
+						<div class="main__container main__container-two-slide">
+							<div class="main__text main__text-two-slide">
+								<div class="main__title">Нові колекції вечірніх суконь</div>
+								<div class="main__subtitle">Відчуйте себе принцесою на будь-якому заході з новими колекціями
+									вечірніх суконь</div>
+								<div class="main__button"> <a href=""> Переглянути сукні <img src="img/main/arrow-right.svg"
+											class="" alt=""></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="main__three-slide swiper-slide">
+						<div class="main__container">
+							<div class="main__text">
+								<div class="main__title">Почувайся впевнено в діловому одязі від Бурда Любов</div>
+								<div class="main__subtitle">Наші ділові плаття допоможуть вам почуватись впевнено та стильно на
+									роботі. Знайдіть свій ідеальний вигляд </div>
+								<div class="main__button"> <a href=""> Створити образ <img src="img/main/arrow-right.svg"
+											class="" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__four-slide swiper-slide">
+						<div class="main__container">
+							<div class="main__text">
+								<div class="main__title">Відчувайте себе впевненою з колекцією костюмів та блуз</div>
+								<div class="main__subtitle">Знайдіть свій ідеальний вигляд для професійного успіху вже сьогодні!
+								</div>
+								<div class="main__button"> <a href=""> Підібрати костюм <img src="img/main/arrow-right.svg"
+											class="" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__five-slide swiper-slide">
+						<div class="main__container">
+							<div class="main__text">
+								<div class="main__title">Почувайся впевнено в діловому одязі від Бурда Любов</div>
+								<div class="main__subtitle">Наші ділові плаття допоможуть вам почуватись впевнено та стильно на
+									роботі. Знайдіть свій ідеальний вигляд
+								</div>
+								<div class="main__button"> <a href=""> Створити образ <img src="img/main/arrow-right.svg"
+											class="" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- If we need scrollbar -->
+
+				</div>
+				<div class="swiper-nav">
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+
+			</div>
+
+			<div class="page__advantages advantages">
+				<div class="advantages__container">
+					<div class="advantages__item">
+						<div class="advantages__image"><img src="img/advantages/advantages01.svg" class="" alt="advantages01">
+						</div>
+						<div class="advantages__text">Ми виробники. Тому ви можете бути впевнені в якості одягу</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__image"><img src="img/advantages/advantages02.svg" class="" alt="advantages02">
+						</div>
+						<div class="advantages__text">Пропонуємо якісний та сучасний жіночий одяг за найнижчими цінами</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__image"><img src="img/advantages/advantages03.svg" class="" alt="advantages03">
+						</div>
+						<div class="advantages__text">Маємо великий досвід роботи. Виготовляємо одяг вже більше 9 років</div>
+					</div>
+					<div class="advantages__item">
+						<div class="advantages__image"><img src="img/advantages/advantages04.svg" class="" alt="advantages04">
+						</div>
+						<div class="advantages__text">У нас ви знайдете лише стильний та сучасний жіночий одяг </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page__dresses dresses">
+				<div class="dresses__container">
+					<div class="dresses__header">
+						<div class="dresses__title title-pink"> Легендарні сукні</div>
+						<div class="title-pink__more more-text-bold"><a href="">Увесь асортимент суконь <img
+									src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a> </div>
+					</div>
+					<div class="dresses__body">
+						<div class="dresses__column dresses__column-one dresses-column">
+							<div class="dresses-column__img">
+								<img src="img/legendary-dresses/dress1.png" class="" alt="dress">
+							</div>
+							<div class="dresses-column__text">
+								<div class="dresses-column__title title-name"> <a href=""> Костюм або плаття гіпюр баска
+										ошатне</a></div>
+								<div class="dresses-column__more more-text-bold"> <a href=""> Замовити <img
+											src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="dresses__column dresses__column-two dresses-column">
+							<div class="dresses-column__img">
+								<img src="img/legendary-dresses/dress2.png" class="" alt="dress2">
+							</div>
+							<div class="dresses-column__text">
+								<div class="dresses-column__title title-name"> <a href=""> Гіпюрова жіноча сукня</a></div>
+								<div class="dresses-column__more more-text-bold"> <a href=""> Замовити <img
+											src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+					<div class="dresses__catalog">
+						<div class="dresses__card dresses-card">
+							<div class="dresses-card__image">
+								<img src="img/legendary-dresses/catalog/01.png" class="" alt="firstcard">
+								<div class="dresses-card__decor">
+									<div class="dresses-card__text-img">
+										<div class="dresses-card__sale">Знижка -5%</div>
+									</div>
+									<div class="dresses-card__whitelist">
+										<img src="img/icons/like-card.svg" class="" alt="whitelist">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="dresses-card__description">
+								<div class="dresses-card__title title-name">Сукня жіноча ошатне гіпюрову c коротким рукавом
+									вечірнє</div>
+								<div class="dresses-card__price"><span>1 184 грн</span> 592 грн</div>
+								<div class="dresses-card__hidden">
+									<div class="dresses-card__color">
+										<a href=""><i class="dresses-card__color-black"></a></i>
+										<a href=""><i class="dresses-card__color-pink"></a></i>
+										<a href=""><i class="dresses-card__color-white"></a></i>
+										<a href=""><i class="dresses-card__color-blue"></a></i>
+									</div>
+									<div class="dresses-card__size">
+										<a href="" class="active-size">34</a>
+										<a href="" class="active-size">36</a>
+										<a href="" class="">38</a>
+										<a href="" class="">40</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="dresses__card dresses-card">
+							<div class="dresses-card__image">
+								<img src="img/legendary-dresses/catalog/02.png" class="" alt="firstcard">
+								<div class="dresses-card__decor">
+									<div class="dresses-card__text-img">
+										<div class="dresses-card__sale">Знижка -5%</div>
+										<div class="dresses-card__new">Новинка</div>
+
+									</div>
+									<div class="dresses-card__whitelist">
+										<img src="img/icons/like-card.svg" class="" alt="whitelist">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="dresses-card__description">
+								<div class="dresses-card__title title-name">Сукня жіноча ошатне вечірній красиве в різний
+									горошок</div>
+								<div class="dresses-card__price"><span>1 856 грн</span> 928 грн</div>
+								<div class="dresses-card__hidden">
+									<div class="dresses-card__color">
+										<a href=""><i class="dresses-card__color-black"></a></i>
+										<a href=""><i class="dresses-card__color-pink"></a></i>
+										<a href=""><i class="dresses-card__color-white"></a></i>
+										<a href=""><i class="dresses-card__color-blue"></a></i>
+									</div>
+									<div class="dresses-card__size">
+										<a href="" class="active-size">34</a>
+										<a href="" class="active-size">36</a>
+										<a href="" class="">38</a>
+										<a href="" class="">40</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="dresses__card dresses-card">
+							<div class="dresses-card__image">
+								<img src="img/legendary-dresses/catalog/03.png" class="" alt="firstcard">
+								<div class="dresses-card__decor">
+									<div class="dresses-card__text-img">
+										<div class="dresses-card__sale">Знижка -5%</div>
+										<div class="dresses-card__new">Новинка</div>
+									</div>
+									<div class="dresses-card__whitelist">
+										<img src="img/icons/like-card.svg" class="" alt="whitelist">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="dresses-card__description">
+								<div class="dresses-card__title title-name">Сукня шлейф з гіпюром</div>
+								<div class="dresses-card__price"><span>752 грн</span> 639,20 грн</div>
+								<div class="dresses-card__hidden">
+									<div class="dresses-card__color">
+										<a href=""><i class="dresses-card__color-black"></a></i>
+										<a href=""><i class="dresses-card__color-pink"></a></i>
+										<a href=""><i class="dresses-card__color-white"></a></i>
+										<a href=""><i class="dresses-card__color-blue"></a></i>
+									</div>
+									<div class="dresses-card__size">
+										<a href="" class="active-size">34</a>
+										<a href="" class="active-size">36</a>
+										<a href="" class="">38</a>
+										<a href="" class="">40</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="dresses__card dresses-card">
+							<div class="dresses-card__image">
+								<img src="img/legendary-dresses/catalog/04.png" class="" alt="firstcard">
+								<div class="dresses-card__decor">
+									<div class="dresses-card__text-img">
+										<div class="dresses-card__popular">Популярний</div>
+									</div>
+									<div class="dresses-card__whitelist">
+										<img src="img/icons/like-card.svg" class="" alt="whitelist">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="dresses-card__description">
+								<div class="dresses-card__title title-name">Плате Дейзі анго софт мереживо</div>
+								<div class="dresses-card__price"><span>563 грн</span> 534,85 грн</div>
+								<div class="dresses-card__hidden">
+									<div class="dresses-card__color">
+										<a href=""><i class="dresses-card__color-black"></a></i>
+										<a href=""><i class="dresses-card__color-pink"></a></i>
+										<a href=""><i class="dresses-card__color-white"></a></i>
+										<a href=""><i class="dresses-card__color-blue"></a></i>
+									</div>
+									<div class="dresses-card__size">
+										<a href="" class="active-size">34</a>
+										<a href="" class="active-size">36</a>
+										<a href="" class="">38</a>
+										<a href="" class="">40</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="dresses__card dresses-card">
+							<div class="dresses-card__image">
+								<img src="img/legendary-dresses/catalog/01.png" class="" alt="firstcard">
+								<div class="dresses-card__decor">
+									<div class="dresses-card__text-img">
+										<div class="dresses-card__sale">Знижка -5%</div>
+									</div>
+									<div class="dresses-card__whitelist">
+										<img src="img/icons/like-card.svg" class="" alt="whitelist">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="dresses-card__description">
+								<div class="dresses-card__title title-name">Сукня жіноча ошатне гіпюрову c коротким рукавом
+									вечірнє</div>
+								<div class="dresses-card__price"><span>1 184 грн</span> 592 грн</div>
+								<div class="dresses-card__hidden">
+									<div class="dresses-card__color">
+										<a href=""><i class="dresses-card__color-black"></a></i>
+										<a href=""><i class="dresses-card__color-pink"></a></i>
+										<a href=""><i class="dresses-card__color-white"></a></i>
+										<a href=""><i class="dresses-card__color-blue"></a></i>
+									</div>
+									<div class="dresses-card__size">
+										<a href="" class="active-size">34</a>
+										<a href="" class="active-size">36</a>
+										<a href="" class="">38</a>
+										<a href="" class="">40</a>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="page__popular popular">
+				<div class="popular__container">
+					<div class="popular__header">
+						<div class="popular__title title-pink">Найпопулярніші пропозиції</div>
+						<div class="popular__disription">Виглядайте якнайкраще, адже ви того варті!</div>
+					</div>
+					<div class="popular__body">
+						<div class="popular__catalog dresses__catalog">
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/popular-dresses/popular-dresses01.png" class="" alt="popular-dresses">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__popular">Популярний</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча дайвінг з V-вирізом</div>
+									<div class="dresses-card__price"><span>484 грн</span> 411,40 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/popular-dresses/popular-dresses02.png" class="" alt="popular-dresses">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__new">Новинка</div>
+
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Костюм жіночий брючний спортивний з гіпюром
+										ошатний</div>
+									<div class="dresses-card__price"><span>1300 грн</span> 715 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/popular-dresses/popular-dresses03.png" class="" alt="popular-dresses">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__new">Новинка</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Плаття футляр жіночий Брошки з рукавом сітка
+									</div>
+									<div class="dresses-card__price"><span>570 грн</span> 484,50 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/popular-dresses/popular-dresses04.png" class="" alt="popular-dresses">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__popular">Популярний</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Пляжна туніка в підлогу купити</div>
+									<div class="dresses-card__price">324 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/popular-dresses/popular-dresses01.png" class="" alt="popular-dresses">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__popular">Популярний</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча дайвінг з V-вирізом</div>
+									<div class="dresses-card__price"><span>484 грн</span> 411,40 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="page__promo">
+				<img src="img/category-bgimg.png" class="" alt="">
+			</div>
+
+			<div class="page__create create">
+				<div class="create__container">
+					<div class="create__title title-pink">Створи свій гардероб разом з Burda Liubov</div>
+					<div class="create__row">
+						<div class="create__card">
+							<div class="create__img">
+								<a href=""><img src="img/create/create01.png" class="" alt=""></a>
+							</div>
+							<div class="create__text more-text-bold">
+								<a href="">Сукні<img src="img/icons/arrow-right.svg" class="more-text-bold__arrow"
+										alt="arrow-right"></a>
+							</div>
+
+						</div>
+						<div class="create__card">
+							<div class="create__img">
+								<a href=""><img src="img/create/create02.png" class="" alt=""></a>
+							</div>
+							<div class="create__text more-text-bold">
+								<a href="">Вечірні сукні<img src="img/icons/arrow-right.svg" class="more-text-bold__arrow"
+										alt="arrow-right"></a>
+							</div>
+
+						</div>
+						<div class="create__card">
+							<div class="create__img">
+								<a href=""><img src="img/create/create03.png" class="" alt=""></a>
+							</div>
+							<div class="create__text more-text-bold">
+								<a href="">Пляжні туніки<img src="img/icons/arrow-right.svg" class="more-text-bold__arrow"
+										alt="arrow-right"></a>
+							</div>
+
+						</div>
+						<div class="create__card">
+							<div class="create__img">
+								<img src="img/create/create04.png" class="" alt="">
+							</div>
+							<div class="create__text more-text-bold">
+								<a href="">Спортивні костюми<img src="img/icons/arrow-right.svg" class="more-text-bold__arrow"
+										alt="arrow-right"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page__follow follow">
+				<div class="follow__container">
+					<div class="follow__wrapper">
+						<div class="follow__column follow__first-column">
+							<div class="follow__text">
+								<div class="follow__title title-pink">Слідкуйте за нами в соц. мережах</div>
+								<div class="follow__desription title-name">Та дізнавайтеся першими про наші новинки, акції та
+									знижки!</div>
+							</div>
+							<div class="follow__column-image">
+								<img src="img/follow/follow01.png" class="follow__column-first" alt="follow01">
+								<img src="img/follow/follow02.png" class="ollow__column-second" alt="follow02">
+							</div>
+						</div>
+						<div class="follow__column">
+							<img src="img/follow/follow03.png" class="ollow__column-third" alt="follow03">
+						</div>
+						<div class="follow__column">
+							<img src="img/follow/follow04.png" class="ollow__column-fifth" alt="follow04">
+						</div>
+					</div>
+					<div class="follow__social">
+						<div class="follow__inst">
+							<img src="img/follow/inst.svg" class="" alt="inst">
+							<p>Ми в Instagram: <a href="">@burdalybov</a></p>
+						</div>
+						<div class="follow__facebbok">
+							<img src="img/follow/facebook.svg" class="" alt="inst">
+							<p>Ми в Facebook: <a href="">@burdalybov</a></p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="page__viewed viewed">
+				<div class="viewed__container">
+					<div class="viewed__header">
+						<div class="viewed__title title-pink">Ви переглядали</div>
+					</div>
+					<div class="viewed__body">
+						<div class="viewed__catalog dresses__catalog">
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/viewed/viewed01.png" class="" alt="viewed01">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__popular">Популярний</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча гіпюр ошатне вечірній випускний
+									</div>
+									<div class="dresses-card__price"><span>1 184 грн</span> 592 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/viewed/viewed02.png" class="" alt="viewed02">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__new">Новинка</div>
+
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча гіпюр ошатне вечірній випускний
+									</div>
+									<div class="dresses-card__price"><span>534,85 грн</span> 592 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/viewed/viewed03.png" class="" alt="viewed03">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+
+											<div class="dresses-card__new">Новинка</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча гіпюр ошатне вечірній випускний
+									</div>
+									<div class="dresses-card__price"> 668 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/viewed/viewed04.png" class="" alt="viewed04">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__popular">Популярний</div>
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча гіпюр ошатне вечірній випускний
+									</div>
+									<div class="dresses-card__price">631 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="dresses__card dresses-card">
+								<div class="dresses-card__image">
+									<img src="img/viewed/viewed02.png" class="" alt="viewed02">
+									<div class="dresses-card__decor">
+										<div class="dresses-card__text-img">
+											<div class="dresses-card__sale">Знижка -5%</div>
+											<div class="dresses-card__new">Новинка</div>
+
+										</div>
+										<div class="dresses-card__whitelist">
+											<img src="img/icons/like-card.svg" class="" alt="whitelist">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="dresses-card__description">
+									<div class="dresses-card__title title-name">Сукня жіноча гіпюр ошатне вечірній випускний
+									</div>
+									<div class="dresses-card__price"><span>534,85 грн</span> 592 грн</div>
+									<div class="dresses-card__hidden">
+										<div class="dresses-card__color">
+											<a href=""><i class="dresses-card__color-black"></a></i>
+											<a href=""><i class="dresses-card__color-pink"></a></i>
+											<a href=""><i class="dresses-card__color-white"></a></i>
+											<a href=""><i class="dresses-card__color-blue"></a></i>
+										</div>
+										<div class="dresses-card__size">
+											<a href="" class="active-size">34</a>
+											<a href="" class="active-size">36</a>
+											<a href="" class="">38</a>
+											<a href="" class="">40</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="page__immerse immerse">
+				<div class="immerse__container">
+					<div class="immerse__header">
+						<div class="immerse__text ">
+							<div class="immerse__title title-pink">Пориньте в світ моди разом з Burda Liubov</div>
+							<div class="immerse__discription title-name">Дізнавайтеся про останні модні тенденції, нові
+								надходженя та акції читаючи наш блоґ</div>
+						</div>
+						<div class="immerse__more more-text-bold"><a href="">Переглянути всі статті магазину <img
+									src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a> </div>
+					</div>
+					<div class="immerse__wrapper">
+						<div class="immerse__body immerse-body">
+							<div class="immerse-body__img">
+								<img src="img/immerse/immerse-first.png" class="" alt="">
+							</div>
+							<div class="immerse-body__card immerse-card">
+								<div class="immerse-card__date"><img src="img/immerse/calnedar.svg" class=""
+										alt="calnedar">24.02.2023</div>
+								<div class="immerse-card__title">Повертаємо 50% від кожної покупки</div>
+								<div class="immerse-card__disription">Кожен клієнт, який потрапляє в це місце, повинен відчути
+									себе
+									коханим. Як? Не словами, а діями. Liubov Burda проявляє своє кохання за допомогою турботи та
+									здійснення бажань. Повертаємо 50% від суми твого замовлення!</div>
+								<div class="immerse-card__more more-text-bold"><a href="">Детальніше <img
+											src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a>
+								</div>
+
+							</div>
+						</div>
+						<div class="immerse__body immerse-body">
+							<div class="immerse-body__img">
+								<img src="img/immerse/immerse-two.png" class="" alt="">
+							</div>
+							<div class="immerse-body__card immerse-card">
+								<div class="immerse-card__date"><img src="img/immerse/calnedar.svg" class=""
+										alt="calnedar">24.02.2023</div>
+								<div class="immerse-card__title">Далі буде тільки краще, обіцяємо. Разом ми сила!</div>
+								<div class="immerse-card__disription">Замість веселощів, сміху і нових відкриттів прийшла війна,
+									а історія нашої країни закарбувала нові дати. Часом вони були нестерпно болючими, як напис
+								</div>
+								<div class="immerse-card__more more-text-bold"><a href="">Детальніше <img
+											src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+
+			<div class="page__feedback feedback">
+				<div class="feedback__container">
+					<div class="feedback__header">
+						<div class="feedback__title title-pink">Відгуки від наших покупців</div>
+					</div>
+					<div class="feedback__body">
+						<div class="feedback__card feedback-card">
+							<div class="feedback-card__header">
+								<div class="feedback-card__photo"><img src="img/feedback/photo1.png" class="" alt=""></div>
+								<div class="feedback-card__name">Алла</div>
+							</div>
+							<div class="feedback-card__body">
+								<p>
+									Дуже ввічливе обслуговування, швидка розгорнута консультація,
+									приємні ціни. Обов'язково замовлятиму тут ще!
+								</p>
+
+							</div>
+							<div class="feedback-card__footer"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i>
+							</div>
+
+						</div>
+						<div class="feedback__card feedback-card">
+							<div class="feedback-card__header">
+								<div class="feedback-card__photo"><img src="img/feedback/photo2.png" class="" alt="photo2">
+								</div>
+								<div class="feedback-card__name">Мар’яна</div>
+							</div>
+							<div class="feedback-card__body">
+								<p>
+									Костюм пілійшов,все влаштувало,придупридили що відправлять в тіченії 5 днів,задоволена😃
+								</p>
+
+							</div>
+							<div class="feedback-card__footer"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i>
+							</div>
+
+						</div>
+						<div class="feedback__card feedback-card">
+							<div class="feedback-card__header">
+								<div class="feedback-card__photo"><img src="img/feedback/photo3.png" class="" alt="photo3">
+								</div>
+								<div class="feedback-card__name">Оксана</div>
+							</div>
+							<div class="feedback-card__body">
+								<p>
+									Продавець зв'язалась швидко та відправила. Плаття підійшло по розміру.Дякую за плаття, дуже
+									сподобалось😘
+								</p>
+
+							</div>
+							<div class="feedback-card__footer"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i>
+							</div>
+
+						</div>
+						<div class="feedback__card feedback-card">
+							<div class="feedback-card__header">
+								<div class="feedback-card__photo"><img src="img/feedback/photo4.png" class="" alt="photo4">
+								</div>
+								<div class="feedback-card__name">Ірина</div>
+							</div>
+							<div class="feedback-card__body">
+								<p>
+									Сукню замовила ввечері, рано-вранці ми вже списалися з продавцем, обговорили всі деталі та
+									підтвердили замовлення. Замовлення тут роблю не вперше, є вже кілька гарних суконь звідси.❤️
+								</p>
+
+							</div>
+							<div class="feedback-card__footer"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="page__aboutus aboutus">
+				<div class="aboutus__container">
+					<div class="aboutus__title ">Інтернет-магазин жіночого одягу Burda Liubov</div>
+					<div class="aboutus__disription">Lorem ipsum dolor sit amet consectetur. Fermentum suspendisse eget nulla
+						sit. Quam morbi arcu aenean accumsan lorem sit. Ac enim est malesuada amet. Neque augue viverra nisi
+						molestie cursus.
+						Augue et sed eu tristique risus blandit. Pharetra dignissim eget magna faucibus imperdiet mattis ac
+						neque. Feugiat tristique sed dictum sapien proin. Cursus diam faucibus pellentesque a. Tristique
+						turpis lectus est arcu praesent ut hendrerit. Erat cras sollicitudin lectus quis mattis at morbi
+						malesuada fermentum. Id risus lectus non auctor eleifend. Quis sem convallis dolor morbi. Porttitor
+						fermentum nec fames lobortis auctor lacus eget mauris. Nullam pellentesque ornare pharetra massa
+						turpis nunc et lectus.
+						Et sed amet commodo morbi duis tristique mauris convallis. Elementum sed vitae sed sit curabitur
+						cursus nulla suspendisse purus. Sagittis mattis eget id malesuada urna. Dui viverra integer morbi
+						lectus sed purus nec justo. Orci lobortis lobortis sit tempus faucibus. Scelerisque tristique placerat
+						laoreet vitae amet augue amet vel vulputate. Auctor tincidunt et magna sit. Nibh ornare id vel egestas
+						adipiscing odio. Amet velit blandit ultricies amet in amet. Et et adipiscing vitae habitant imperdiet
+						aliquet ut convallis.
+						Purus non eu fermentum odio urna nibh rhoncus massa. Feugiat nullam ornare rhoncus lacus cum viverra
+						ac. Sagittis etiam maecenas rhoncus quam lectus purus. Sed egestas lorem in tortor id turpis ultrices
+						pellentesque. Sapien neque neque venenatis nibh purus. Ut et odio penatibus maecenas nunc aliquet.
+					</div>
+					<div class="aboutus__more more-text-bold"><a href="">Дізнатися більше про компанію <img
+								src="img/icons/arrow-right.svg" class="more-text-bold__arrow" alt="arrow-right"></a> </div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__column">
+						<div class="footer__title">Категорії товарів</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="">Сукні</a></li>
+							<li class="footer__item"><a href="">Блузки</a></li>
+							<li class="footer__item"><a href="">Спідниці</a></li>
+							<li class="footer__item"><a href="">Кардигани</a></li>
+							<li class="footer__item"><a href="">Спортивні костюми</a></li>
+							<li class="footer__item"><a href="">Спортивні штани</a></li>
+							<li class="footer__item"><a href="">Костюми жіночі</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title"></div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="">Пляжні туніки</a></li>
+							<li class="footer__item"><a href="">Гіпюрові сукні</a></li>
+							<li class="footer__item"><a href="">Легінси, лосини</a></li>
+							<li class="footer__item"><a href="">Пальта та підпальта</a></li>
+							<li class="footer__item"><a href="">Вечірні та випускні сукні</a></li>
+							<li class="footer__item"><a href="">Купальники</a></li>
+							<li class="footer__item"><a href="">Сезонний розпродаж</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Корисні посилання</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="">Про нас</a></li>
+							<li class="footer__item"><a href="">Таблиця розмірів</a></li>
+							<li class="footer__item"><a href="">Блоґ</a></li>
+							<li class="footer__item"><a href="">Контакти</a></li>
+							<li class="footer__item"><a href="">Доставка і оплата</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Контакти</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="">+38 (099) 372-16-81</a></li>
+							<li class="footer__item"><a href="">+38 (066) 091-41-42</a></li>
+							<li class="footer__item"><a href="">info@burdaliubov.in.ua</a></li>
+							<li class="footer__item"><a href="">Одеса, Україна, вул. Європейська, 22</a></li>
+						</ul>
+						<div class="footer__bank">
+							<img src="img/footer/visa.svg" class="" alt="">
+							<img src="img/footer/mactercard.svg" class="" alt="">
+						</div>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Дізнавайтеся про акції, і новинки на нашому сайті першими!</div>
+						<div class="footer__disription">Підписуйтеся на e-mail розсилку нашого магазину</div>
+						<form action="" class="footer__form">
+							<input type="text" class="footer__iput" placeholder="Введіть свій E-mail тут">
+							<button class="footer__button">Підписатися<img src="img/icons/arrow-right.svg"
+									class="more-text-bold__arrow" alt="arrow-right"></button>
+						</form>
+						<div class="footer__social">
+							<p>Ми в соціальних мережах:</p>
+							<div class="footer__social-images">
+								<img src="img/footer/inst.svg" class="" alt="inst">
+								<img src="img/footer/facebook.svg" class="" alt="facebook">
+								<img src="img/footer/viber.svg" class="" alt="viber">
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+
+					<p>© Liubov Burda, 2023. Всі права захищено</p>
+					<p><a href=""> Політика конфіденційності </a><a href=""> Договір публічної оферти</a></p>
+
+
+
+					<p>Розроблено з <img src="img/footer/onlmed.svg" class="" alt="onlmed"></p>
+
+
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
